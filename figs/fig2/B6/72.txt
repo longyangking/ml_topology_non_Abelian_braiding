@@ -1,0 +1,3 @@
+[(3, False), (5, True), (5, True)]
+[(5, True), (3, False), (5, True)]
+[(5, True), (5, True), (3, False)]
