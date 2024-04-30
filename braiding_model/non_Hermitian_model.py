@@ -4,7 +4,7 @@ import numpy.linalg as LA
 import numba as nb
 from numba.typed import List
 
-@nb.jit()
+@nb.jit(nopython=True)
 def get_P(P, allvectors, n):
     for index in range(len(allvectors)):  # for the each k point
         for i in range(n):

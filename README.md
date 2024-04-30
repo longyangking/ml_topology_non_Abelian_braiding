@@ -23,9 +23,11 @@ The functions of the modules:
 + ``figs`` contains the code that generate the figures in the paper. Note that some figures (e.g., 3D view of braids) in the paper are re-plotted by [Wolframe Mathematica](https://www.wolfram.com/mathematica/).
 
 ## Required packages
-+ Numpy >= 1.26
-+ Matplotlib >= 3.8
-+ Numba >= 0.5
++ Python >= 3.9.18
++ Numpy >= 1.26.3
++ Scipy >= 1.11.4
++ Matplotlib >= 3.8.0
++ Numba >= 0.58.1
 + Jupyter Notebook 
 
 It is recommended to use the latest [Anaconda](https://www.anaconda.com/download). For runing all the code in this repository, there is no need to install the above packages if you use Anaconda (NOT Miniconda). 

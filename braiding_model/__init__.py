@@ -9,5 +9,8 @@ from IPython.display import Markdown, display
 
 def show_braid_words(braid_operators):
     n_operator = len(braid_operators)
-    info = ''.join([str(braid_operators[i]) + ' ' for i in reversed(range(n_operator))])
-    display(Markdown(info))
+    if n_operator > 0:
+        info = ''.join([str(braid_operators[i]) + ' ' for i in reversed(range(n_operator))])
+        display(Markdown(info))
+    else:
+        display(Markdown(r"$e$"))

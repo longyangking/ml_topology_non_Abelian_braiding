@@ -45,11 +45,13 @@ def topology_comparator(topological_model1, topological_model2, perturbation=Non
         sfunc_smooth = sfunc_smooth_in
 
     def object_func(k):
+        k = k.item()
         Q1 = topological_model1.calculate_Q(kpoints=[k], perturbation=perturbation)
         Q2 = topological_model2.calculate_Q(kpoints=[k], perturbation=perturbation)
         return sfunc_smooth(Q1, Q2, epsilon=epsilon)
 
     def evaluate_func(k):
+        k = k.item()
         Q1 = topological_model1.calculate_Q(kpoints=[k], perturbation=perturbation)
         Q2 = topological_model2.calculate_Q(kpoints=[k], perturbation=perturbation)
         return sfunc(Q1, Q2, c_val=c_val)
